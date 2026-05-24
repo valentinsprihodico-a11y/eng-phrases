@@ -18,3 +18,10 @@ model Phrase {
 
 После этого:
 npx prisma migrate dev --name init
+
+3. Создать базу (миграция)
+npx prisma migrate dev --name init
+
+▶️ 4. Запуск проекта
+npm run dev
+Открываешь: http://localhost:3000
