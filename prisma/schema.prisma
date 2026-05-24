@@ -11,3 +11,11 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
+
+model Phrase {
+  id        Int      @id @default(autoincrement())
+  text      String
+  category  String?
+  level     Int      @default(0) // степень изученности 0–5
+  createdAt DateTime @default(now())
+}
